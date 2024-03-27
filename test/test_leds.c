@@ -83,5 +83,5 @@ void test_apagar_todos_los_leds_prendidos(void) {
     leds_turn_on(9);
     leds_turn_off_leds_on(&leds_virtuales);
 
-    TEST_ASSERT_EQUAL_UINT16(0x0000, leds_virtuales);
+    TEST_ASSERT_EQUAL_UINT16(0b0000000000000000, leds_virtuales);
 }
